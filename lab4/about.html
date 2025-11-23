@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>О Барсике — Grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">О Барсике</h1>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О коте (Grid)</a>
+        <a href="gallery.html">Галерея / Форма</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container grid-main">
+    <section class="bio card">
+      <h2>Кратко о Барсике</h2>
+      <p>Барсик — дружелюбный кот. Любит солнце, спать и рыбные лакомства.</p>
+      <table>
+        <tr><th>Параметр</th><th>Значение</th></tr>
+        <tr><td>Порода</td><td>Британец</td></tr>
+        <tr><td>Возраст</td><td>3 года</td></tr>
+        <tr><td>Любимая еда</td><td>Тунец</td></tr>
+      </table>
+    </section>
+
+    <section class="stats card">
+      <h2>Характер</h2>
+      <ul>
+        <li>Ласковый</li>
+        <li>Любознательный</li>
+        <li>Иногда ленивый</li>
+      </ul>
+    </section>
+
+    <section class="photos card">
+      <h2>Фотографии</h2>
+      <div class="grid-photos">
+        <img src="https://placekitten.com/300/200" alt="Кот 1">
+        <img src="https://placekitten.com/301/200" alt="Кот 2">
+        <img src="https://placekitten.com/302/200" alt="Кот 3">
+        <img src="https://placekitten.com/303/200" alt="Кот 4">
+      </div>
+    </section>
+
+    <section class="more card">
+      <h2>Дополнительно</h2>
+      <p>Здесь можно добавить заметки, заметки о здоровье, прививках и т.п.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Мой кот — лабораторная.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

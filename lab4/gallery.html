@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Галерея и форма — Отправка данных</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Галерея и форма</h1>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О коте (Grid)</a>
+        <a href="gallery.html">Галерея / Форма</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <section class="card form-card">
+      <h2>Форма: отправка данных</h2>
+      <p>Заполни форму и нажми «Отправить» — в консоли появится форматированный объект.</p>
+
+      <form id="userForm">
+        <!-- текстовое поле -->
+        <label>
+          Имя:
+          <input type="text" name="name" id="name" required placeholder="Введите имя">
+        </label>
+
+        <!-- email -->
+        <label>
+          Email:
+          <input type="email" name="email" id="email" required placeholder="example@mail.com">
+        </label>
+
+        <!-- пароль -->
+        <label>
+          Пароль:
+          <input type="password" name="password" id="password" required placeholder="Пароль">
+        </label>
+
+        <!-- checkbox -->
+        <label class="checkbox">
+          <input type="checkbox" name="consent" id="consent" required>
+          Даю согласие на обработку данных
+        </label>
+
+        <!-- radio (ещё один тип) -->
+        <fieldset>
+          <legend>Подписка</legend>
+          <label><input type="radio" name="subscribe" value="yes" checked> Подписаться</label>
+          <label><input type="radio" name="subscribe" value="no"> Не подписываться</label>
+        </fieldset>
+
+        <!-- select -->
+        <label>
+          Выбери роль:
+          <select name="role" id="role">
+            <option value="reader">Читатель</option>
+            <option value="contributor">Участник</option>
+            <option value="admin">Администратор</option>
+          </select>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Отправить на сервер</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card gallery-preview">
+      <h2>Превью</h2>
+      <div class="gallery">
+        <img src="https://placekitten.com/300/200" alt="Кот 1">
+        <img src="https://placekitten.com/301/200" alt="Кот 2">
+        <img src="https://placekitten.com/302/200" alt="Кот 3">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Мой кот — лабораторная.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
